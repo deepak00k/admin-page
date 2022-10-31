@@ -1,0 +1,192 @@
+* {
+  box-sizing: border-box;
+font-family: "Times New Roman", Times, serif;
+
+}
+body{
+background:linear-gradient(to right,#D2691E,#FFD700);
+}
+
+ul {
+  border-radius:10px;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: right;
+}
+
+li a {
+  font-size:17px;
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: white;
+  border-radius:10px;
+  color:black;
+  font-size:17px;
+}
+
+nav{
+background-color: #333;
+border-radius:10px;
+display:flex;
+align-items:center;
+justify-content:space-between;
+}
+
+.logo{
+color:white;
+font-size:18px;
+font-weight:bold;
+letter-spacing:2px;
+cursor:pointer;
+padding-left:10px;
+}
+span{
+color:#FF8C00;
+}
+
+.row {
+  display: -webkit-flex;
+  display: flex;
+  width:70%;
+  margin-left:180px;
+  margin-right:50px;
+  margin-top:15px;
+
+}
+
+.box {
+  background-color:white;
+  width:80%;
+  height: 450px;
+  border: 1px solid rgba(0,0,0,.3);
+  border-radius:10px;
+  padding: 10px;
+  margin-left: 20px;
+}
+.column {
+  -webkit-flex: 1;
+  -ms-flex: 1;
+  flex: 1;
+  padding: 5px;
+  height: 500px;
+
+}
+
+
+.footer {
+  background-color: rgba(0,0,0,.9);
+  border-radius:10px;
+  padding: 27px;
+  margin-top: 15px;
+  text-align: center;
+}
+
+
+h3{
+font-size:25px;
+text-align:center;
+color:black;
+text-shadow:2px 2px 4px rgba(0,0,0,.6);
+letter-spacing:2px;
+margin-bottom:2%;
+opacity:.7;
+}
+
+.letter div1 input{
+font-size:14px;
+font-weight:bold;
+display:inline-block;
+width:90%;
+margin:5% auto;
+padding:10px ;
+border:1px solid Lavender;
+outline:none;
+border-radius:7px;
+}
+
+.letter div1 input:hover{
+border:1px solid black;
+}
+.psw {
+float:right;
+margin-right:10px;
+font-size:15px;
+}
+
+.btn{
+background-color:dodgerblue;
+color:white;
+font-size:13px;
+text-decoration:none;
+border:1px solid dodgerblue;
+font-weight:bold;
+padding:8px 30px;
+border-radius:15px;
+transition:transform .2s;
+}
+
+.btn:hover{
+  background-color: dodgerblue;
+  color: black;
+}
+
+.google {
+  background-color:dodgerblue;
+  color: white;
+ border:1px solid transparent;
+  margin-top:10px;
+}
+
+.google :hover{
+color:white;
+}
+ img{
+  width: 25px;
+  height:25px;
+ 
+}
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  border-bottom: 1px dotted black;
+  left:80%;
+}
+
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color:transparent;
+  color: #fff;
+  text-align: center;
+  border-radius: 6px;
+  padding: 5px 0;
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left:30%;
+  margin-left: -50px;
+}
+
+.tooltip:hover .tooltiptext {
+  visibility: visible;
+}
+
+@media (max-width: 500px) {
+  .row {
+    -webkit-flex-direction: column;
+    flex-direction: column;
+  }
+}
